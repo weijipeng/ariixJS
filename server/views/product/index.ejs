@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta	content="width=device-width, minimum-scale=1.0,initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"
+			id="viewport" name="viewport" />
+		<link rel="stylesheet" type="text/css" href="/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="/css/index.css" />	
+		<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.touchSlider.js"></script>
+		
+	</head>
+	<body class="layout">
+		<!--<div id="header">
+			<p>秋露商城</p>
+			<div>
+				<a href="#"><img src="images/ql_ssan.png"></a>
+			</div>
+		</div>-->
+		<!--轮播图-->		
+		<div class="main_visual">
+				<!--box-->
+			<div class="imgbox">
+				<img src="images/lbtbox.png"/>
+			</div>
+		
+			<div class="main_image">
+				<ul>
+					<li><span><a href="###"><img src="images/banner1.png"/></a></span></li>
+					<li><span><a href="###"><img src="images/banner2.png"/></a></span></li>
+					<li><span><a href="###"><img src="images/banner3.png"/></a></span></li>
+					<li><span><a href="###"><img src="images/banner4.png"/></a></span></li>
+				</ul>
+				<a href="javascript:;" id="btn_prev"></a>
+				<a href="javascript:;" id="btn_next"></a>
+			</div>
+		</div>	
+		<!--轮播图结束-->
+		
+		<!--分类-->
+		<div class="navtop">
+			<ul>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop1.jpg"></dd>
+					<dt>公司简介</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop2.jpg"></dd>
+					<dt>荣誉表彰</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop3.jpg"></dd>
+					<dt>康沛</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop4.jpg"></dd>
+					<dt>卓霏</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop5.jpg"></dd>
+					<dt>倍净</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop6.jpg"></dd>
+					<dt>睿活</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop7.jpg"></dd>
+					<dt>纤体</dt>
+					</li>
+				</a>
+				<a href="classification.html">
+					<li>
+					<dd><img src="images/navtop8.jpg"></dd>
+					<dt>精油</dt>
+					</li>
+				</a>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+		<div class="content">
+			<h3>公司简介</h3>
+			<img src="images/content1.jpg">
+			<img src="images/content2.jpg">
+			<img src="images/content3.jpg">
+			<img src="images/content4.jpg">
+		</div>
+		
+		<!--foot导航栏-->
+		<div class="footer_box"></div>
+		<div class="footer layout">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/foot1-2.png">
+						<p>群组</p>
+					</a>
+				</li>
+				<li>
+					<a href="case/index.html">
+						<img src="images/foot2-2.png">
+				    	<p>案例</p>
+					</a>
+				</li>
+				<li id="foot_3">
+					<a href="index.html">
+						<img src="images/foot3-1.png">
+					</a>
+				</li>
+				<li>
+					<a href="classroom/index.html">
+						<img src="images/foot4-2.png">
+						<p>语音课堂</p>
+					</a>
+				</li>	
+				<li>
+					<a href="#">
+						<img src="images/foot5-2.png">
+						<p>我的</p>
+					</a>
+				</li>	
+			</ul>			
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$(".main_visual").hover(function(){
+					$("#btn_prev,#btn_next").fadeIn()
+				},function(){
+					$("#btn_prev,#btn_next").fadeOut()
+				});
+				
+				$dragBln = false;
+				
+				
+				$('.main_image').bind("mousedown", function() {
+					$dragBln = false;
+				});
+				
+				$('.main_image').bind("dragstart", function() {
+					$dragBln = true;
+				});
+				
+				$('.main_image a').click(function(){
+					if($dragBln) {
+						return false;
+					}
+				});
+				
+				timer = setInterval(function(){
+					$("#btn_next").click();
+				}, 3000);
+				
+				$(".main_visual").hover(function(){
+					clearInterval(timer);
+				},function(){
+					timer = setInterval(function(){
+						$("#btn_next").click();
+					},3000);
+				});
+				
+				$('.main_image').bind("touchstart",function(){
+					clearInterval(timer);
+				}).bind("touchend", function(){
+					timer = setInterval(function(){
+						$("#btn_next").click();
+					}, 3000);
+				});
+				
+			
+			})
+		</script>
+		<script src="/js/product_index.js"></script>
+	</body>	
+	</html>
+		

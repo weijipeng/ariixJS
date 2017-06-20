@@ -1,0 +1,166 @@
+body {
+	background: #EEEEEE;
+}
+.class_list {
+	background: #fff;
+	position: fixed;
+	top:0;
+	width: 100%;
+}
+.class_list ul {
+	padding: 0 2%;
+}
+.class_list ul li {
+	float: left;
+	padding: 10px 0;
+	margin: 0 15px;
+	font-size: 15px;
+}
+.class_main {
+	background: #EFEFEF;
+	padding: 5% 2% 2%;
+	margin-top: 30px;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+}
+.class_main ul li {
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.class_main ul li img {
+	width: 96%;
+	margin: 0 2%;
+	display: block;
+}
+.class_main ul li p {
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 2%;
+	background:#DDDDDD;
+	font-weight:600 ;
+	font-size: 15px;
+}
+.main_list {
+	position: fixed;
+	width: 100%;
+	top:41px;
+	height: 60px;
+	line-height: 60px;
+	padding-left:20px;
+	border-bottom: 1px solid #ddd;
+	z-index: 10;
+	background: #ddd;
+}
+.main_list_img img {
+	width: 25px;
+	position: absolute;
+	top:17px;
+}
+.main_list_number {
+	margin-left: 30px;
+	font-size: 15px;
+	display: inline-block;
+}
+.main_list_number span {
+	color: #666;
+	display: inline-block;
+}
+.multi_select {
+	position: absolute;
+	right: 15px;
+	top:0;
+	font-size: 15px;
+	color: #666;
+}
+.multi_select img {
+	width: 25px;
+	position: absolute;
+	top:17px;
+	right: 33px;
+}
+.class_content {
+	margin: 101px 0 50px 0;
+	padding: 0 2%;
+}
+.class_content li {
+	position: relative;
+	padding: 10px 0;
+	height: 63px;
+	border-bottom: 1px solid #ddd;
+	z-index: -1;
+}
+.class_content dt {
+	position: absolute;
+	left: 0;
+	top:20px;
+	width: 10%;
+	text-align: center;
+}
+.class_content  dd {
+	position: absolute;
+	left: 40px;
+	width: 70%;
+	text-align: left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	height: 24px;
+	font-size: 15px;
+}
+.class_content  p {
+	position: absolute;
+	left: 40px;
+	width: 50%;
+	text-align: left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	height: 23px;
+	top:32px;
+	font-size: 13px;
+	color: #666;
+}
+.delete img {
+	position: absolute;
+	right: 10%;
+	width: 6%;
+	top:18px;
+}
+.collection img {
+	position: absolute;
+	right: 2%;
+	width: 6%;
+	top:18px;
+}
+.class_controls {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+}
+.class_controls  audio {
+	width:65%;
+	margin:10px 0 0 35%;
+}
+
+.controls_img img {
+	width: 10%;
+	position: absolute;
+	left: 10px;
+	top:5px
+}
+.controls_text {
+	margin-left: 10%;
+	width: 20%;
+	height: 50px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	position: absolute;
+	left: 10px;
+	z-index: -1;
+}

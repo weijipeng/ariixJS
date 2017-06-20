@@ -1,0 +1,129 @@
+.aixlist {
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	top:0;
+	z-index: 10;
+}
+.aixlist ul {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+.aixlist ul a {
+	display:block;
+	flex-shrink: 0;
+	text-decoration: none;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.aixlist ul li dd img {
+	width: 60%;
+}
+.class_on {
+	border-bottom: 2px solid #B51527;
+	color: #B51527;
+	font-weight: 600;
+}
+.viewport {
+	width: 100%;
+    height: 100%;
+    font-size: 1.0em;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.content {
+	padding: 0 2%;
+	background: #efefef;
+	margin-top: 87px;
+}
+.content > h3 {
+	text-align: left;
+	padding: 10px;
+}
+.headline h1 {
+	text-align: center;
+	background:#fff;
+	padding: 15px 2% 30px;
+	color: #666666;
+}
+.headline h2 {
+	text-align: center;
+	color: #979797;
+	font-weight:100;
+	font-size: 33px;
+	padding: 10px 0 5px;
+}
+.headline h5 {
+	text-align: center;
+	color: #979797;
+	font-weight:100;
+	padding:0 5% 30px 5%;
+	line-height: 170%;
+}
+.content_main li {
+	font-size: 12px;
+	background: #fff;
+	padding: 50px 0 20px;
+	float: left;
+}
+.content_main li dd {
+	float:left;
+	width: 40%;
+	display: table-cell;
+}
+.content_main li dd img {
+	width: 90%;
+	float: right; 
+ 	vertical-align:middle;
+}
+.content_main li dt {
+	float:left;
+	width: 60%;
+	padding-left:5%;
+	box-sizing:border-box ;
+}
+.content_main li dt h3 {
+	font-size: 17px;
+	border-bottom: 2px solid #000;
+	margin-right: 10%;
+	padding-bottom: 5px;
+}
+.detailed {
+	padding: 5px 10% 0 2%;
+	font-size: 13px;
+	color: #666666;
+}
+.content_bt {
+	margin-top: 20px;
+	margin-left: 5px;
+	font-size: 14px;
+}
+.content_bt span {
+	color:#B51527 ;
+	font-weight: 600;
+}
+.content_bt a p {
+	padding:5px;
+	background: #EFEFEF;
+	color: #B51527;
+	text-align: center;
+	margin-top: 10px;
+	border-radius:5px; 
+	width:100px;
+	display: block;
+	border-radius: 5px;
+	margin-left: 25%;
+}
+
+/*商品详情*/
+.detailed_img img {
+	width:100%;
+	padding: 0 2%;
+	box-sizing: border-box;
+}

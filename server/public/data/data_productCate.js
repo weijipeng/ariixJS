@@ -1,0 +1,1 @@
+{"data":[{"id":1,"cateName":"111","catePicture":"navtop1.jpg","cateDetail":"2222","isShow":0,"rank":0,"status":0},{"id":2,"cateName":"111","catePicture":"navtop1.jpg","cateDetail":"22","isShow":1,"rank":0,"status":0},{"id":3,"cateName":"111","catePicture":"navtop1.jpg","cateDetail":"3333","isShow":1,"rank":0,"status":0}],"status":true}
